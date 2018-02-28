@@ -18,6 +18,7 @@ class Wall {
         rect(this.canvasSize / 2 - this.width / 2, this.canvasSize - this.height, this.width, this.height);
         let step = this.height / 20.0;
         let even = true;
+        let i;
         for (i = 0; i < this.height; i += step) {
             line(this.canvasSize / 2 - this.width / 2, this.canvasSize - this.height + i, this.canvasSize / 2 + this.width / 2, this.canvasSize - this.height + i);
             if (even) line(this.canvasSize / 2, this.canvasSize - this.height + i, this.canvasSize / 2, this.canvasSize - this.height + i + step);
